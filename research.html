@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Andres Orco</title>
+  <meta name="description" content="Research in music cognition: rhythm and meter, embodied cognition, improvisation and agency, and musical time. Andres Orco, Yale." />
+  <meta property="og:title" content="Research — Andres Orco" />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display: ['Fraunces','serif'], sans: ['Inter','system-ui','sans-serif'] },
+      colors: { ink:'#1a1a1a', paper:'#f6f1e6', accent:'#7c2d12' },
+    } } };
+  </script>
+  <style>
+    .navlink { position: relative; }
+    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:1px; width:0; background:currentColor; transition:width .25s ease; }
+    .navlink:hover::after, .navlink.active::after { width:100%; }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+
+  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display text-lg font-600 tracking-tight">Andres Orco</a>
+      <div class="hidden sm:flex items-center gap-7 text-sm">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="music.html" class="navlink">Music</a>
+        <a href="research.html" class="navlink active">Research</a>
+        <a href="cv.pdf" class="navlink">CV</a>
+        <a href="contact.html" class="navlink">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="max-w-5xl mx-auto px-6 pt-16 pb-10 sm:pt-20">
+    <h1 class="font-display text-4xl sm:text-5xl font-500 mb-5">Research</h1>
+    <!-- Verbatim from Yale page (his words). -->
+    <p class="text-lg text-ink/80 max-w-2xl leading-relaxed">
+      I'm currently interested in music cognition and the computational modeling of music perception, especially as they pertain to rhythm and meter — our ability to infer and abstract meter and temporal structure from music. In previous research, I focused on rhythmic and harmonic complexity in contemporary jazz.
+    </p>
+  </section>
+
+  <!-- ===== THEMES (Andres's words, added 2026-06-22) ===== -->
+  <section class="border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 py-14 sm:py-16">
+      <h2 class="text-xs uppercase tracking-widest text-ink/40 mb-8">Current threads</h2>
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8 max-w-3xl">
+        <div>
+          <h3 class="font-display text-xl font-500 mb-2">Rhythm &amp; meter cognition</h3>
+          <p class="text-sm text-ink/75 leading-relaxed">How listeners infer and abstract meter and temporal structure from music, and how that can be modeled computationally.</p>
+        </div>
+        <div>
+          <h3 class="font-display text-xl font-500 mb-2">Embodied cognition</h3>
+          <p class="text-sm text-ink/75 leading-relaxed">Music perception and performance as grounded in the body, not only in abstract symbol-processing.</p>
+        </div>
+        <div>
+          <h3 class="font-display text-xl font-500 mb-2">Improvisation &amp; agency</h3>
+          <p class="text-sm text-ink/75 leading-relaxed">The cognitive processes of improvisation — in particular, the role of non-conscious processes in consciousness-driven agency in music.</p>
+        </div>
+        <div>
+          <h3 class="font-display text-xl font-500 mb-2">Musical time</h3>
+          <p class="text-sm text-ink/75 leading-relaxed">Notions of time across physics, mathematics, and philosophy, and their relationship to musical time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS (only published work linked) ===== -->
+  <section class="border-t border-ink/10 bg-white/40">
+    <div class="max-w-5xl mx-auto px-6 py-14 sm:py-16">
+      <h2 class="text-xs uppercase tracking-widest text-ink/40 mb-6">Publications</h2>
+      <ol class="space-y-6">
+        <li class="border-l-2 border-accent/40 pl-5">
+          <p class="text-xs uppercase tracking-widest text-ink/40">2025 · Revue Musicale OICRM</p>
+          <h3 class="font-display text-xl font-500 mt-1">Meter in Contemporary Jazz: A Practitioner-Based Approach</h3>
+          <div class="mt-2 flex gap-4 text-sm">
+            <a href="https://revuemusicaleoicrm.org/vol12-n2/" class="text-accent hover:underline" target="_blank" rel="noopener">Read the article →</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== PRESENTATIONS (listed only — no slides/PDFs, may become publications) ===== -->
+  <section class="border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 py-14 sm:py-16">
+      <h2 class="text-xs uppercase tracking-widest text-ink/40 mb-6">Selected presentations</h2>
+      <!-- TODO: add exact talk title + year per line, or list venue only. NO downloadable materials for unpublished work. -->
+      <ul class="space-y-3 text-sm text-ink/80 max-w-2xl">
+        <li>Society for Music Theory — [talk title, year]</li>
+        <li>Rhythm in Music Since 1900 — [talk title, year]</li>
+        <li>University of Buffalo Guitar Research Conference — [talk title, year]</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CV ===== -->
+  <section class="border-t border-ink/10 bg-white/40">
+    <div class="max-w-5xl mx-auto px-6 py-14 sm:py-16">
+      <div class="flex flex-wrap items-baseline justify-between gap-4 mb-8">
+        <h2 class="text-xs uppercase tracking-widest text-ink/40">Curriculum Vitae</h2>
+        <!-- TODO: drop cv.pdf in this folder. -->
+        <a href="cv.pdf" class="px-5 py-2.5 rounded-full border border-ink/25 text-sm font-500 hover:border-ink transition-colors">Download CV (PDF) ↓</a>
+      </div>
+      <div>
+        <h3 class="font-display text-lg font-500 mb-4">Education</h3>
+        <ul class="space-y-3 text-sm text-ink/80 max-w-2xl">
+          <li><span class="font-500">PhD, Music Theory</span> — Yale University · in progress</li>
+          <li><span class="font-500">DMA, Jazz Performance &amp; Pedagogy</span> — University of Colorado Boulder · 2023</li>
+          <li><span class="font-500">MM, Jazz Performance</span> — New England Conservatory · 2020</li>
+          <li><span class="font-500">BM, Guitar Performance &amp; Music Business</span> — Berklee College of Music · 2014</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-paper/50 text-sm">
+    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-wrap items-center justify-between gap-3">
+      <span>© <span class="year"></span> Andres Orco</span>
+      <a href="contact.html" class="hover:text-paper transition-colors">Get in touch →</a>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('.year').forEach(e=>e.textContent=new Date().getFullYear());</script>
+</body>
+</html>

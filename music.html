@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music — Andres Orco</title>
+  <meta name="description" content="Performance videos and recordings — Andres Orco, jazz guitarist." />
+  <meta property="og:title" content="Music — Andres Orco" />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display: ['Fraunces','serif'], sans: ['Inter','system-ui','sans-serif'] },
+      colors: { ink:'#1a1a1a', paper:'#f6f1e6', accent:'#7c2d12' },
+    } } };
+  </script>
+  <style>
+    .navlink { position: relative; }
+    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:1px; width:0; background:currentColor; transition:width .25s ease; }
+    .navlink:hover::after, .navlink.active::after { width:100%; }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+
+  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-display text-lg font-600 tracking-tight">Andres Orco</a>
+      <div class="hidden sm:flex items-center gap-7 text-sm">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="music.html" class="navlink active">Music</a>
+        <a href="research.html" class="navlink">Research</a>
+        <a href="cv.pdf" class="navlink">CV</a>
+        <a href="contact.html" class="navlink">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="max-w-5xl mx-auto px-6 pt-16 pb-10 sm:pt-20">
+    <h1 class="font-display text-4xl sm:text-5xl font-500 mb-4">Music</h1>
+    <p class="text-ink/65 max-w-2xl">[Optional one-line framing — what a listener is about to hear.]</p>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-6 pb-16 sm:pb-20">
+    <div class="grid sm:grid-cols-2 gap-8">
+      <!-- Already on YouTube — replace each YT id (the part after watch?v=). -->
+      <figure>
+        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/YOUTUBE_ID_CU_TRIO" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="CU Trio Sessions"></iframe>
+        </div>
+        <figcaption class="mt-3 text-sm text-ink/70">CU Trio Sessions — [year]</figcaption>
+      </figure>
+
+      <figure>
+        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/YOUTUBE_ID_REFLECTIONS" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Reflections (arrangement)"></iframe>
+        </div>
+        <figcaption class="mt-3 text-sm text-ink/70">Reflections (arr. Orco) — [year]</figcaption>
+      </figure>
+
+      <!-- To upload to YouTube (unlisted is fine), then drop the ids in. -->
+      <figure>
+        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/YOUTUBE_ID_ALONE_TOGETHER" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Alone Together"></iframe>
+        </div>
+        <figcaption class="mt-3 text-sm text-ink/70">Alone Together — [venue / year]</figcaption>
+      </figure>
+
+      <figure>
+        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/YOUTUBE_ID_LIKE_SOMEONE" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Like Someone in Love"></iframe>
+        </div>
+        <figcaption class="mt-3 text-sm text-ink/70">Like Someone in Love — [venue / year]</figcaption>
+      </figure>
+    </div>
+
+    <!-- The Way You Look Tonight — add a 5th figure block here once uploaded, or keep it as a link. -->
+
+    <div class="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+      <a href="[INSTAGRAM_URL]" class="text-accent hover:underline">More clips on Instagram →</a>
+      <a href="[YOUTUBE_CHANNEL_URL]" class="text-accent hover:underline">YouTube channel →</a>
+      <a href="[SOUNDSLICE_URL]" class="text-accent hover:underline">Soundslice →</a>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-paper/50 text-sm">
+    <div class="max-w-5xl mx-auto px-6 py-8 flex flex-wrap items-center justify-between gap-3">
+      <span>© <span class="year"></span> Andres Orco</span>
+      <a href="contact.html" class="hover:text-paper transition-colors">Get in touch →</a>
+    </div>
+  </footer>
+  <script>document.querySelectorAll('.year').forEach(e=>e.textContent=new Date().getFullYear());</script>
+</body>
+</html>
