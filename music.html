@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Music — Andres Orco</title>
-  <meta name="description" content="Performance videos and recordings — Andres Orco, jazz guitarist." />
+  <meta name="description" content="Performance videos and recordings — Andres Orco, guitarist." />
   <meta property="og:title" content="Music — Andres Orco" />
   <meta property="og:type" content="website" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -14,21 +14,21 @@
   <script>
     tailwind.config = { theme: { extend: {
       fontFamily: { display: ['Fraunces','serif'], sans: ['Inter','system-ui','sans-serif'] },
-      colors: { ink:'#1a1a1a', paper:'#f6f1e6', accent:'#7c2d12' },
+      colors: { ink:'#1a1a1a', paper:'#f6f1e6', surface:'#fcfaf4', band:'#efe6d3', accent:'#7c2d12', clay:'#c96442' },
     } } };
   </script>
   <style>
     .navlink { position: relative; }
-    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:1px; width:0; background:currentColor; transition:width .25s ease; }
+    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:2px; width:0; background:currentColor; transition:width .25s ease; }
     .navlink:hover::after, .navlink.active::after { width:100%; }
   </style>
 </head>
-<body class="bg-paper text-ink font-sans antialiased">
+<body class="bg-surface text-ink font-sans antialiased">
 
-  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-ink/10">
+  <header class="sticky top-0 z-50 bg-band/95 backdrop-blur border-b border-ink/10">
     <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="font-display text-xl sm:text-2xl font-600 tracking-tight">Andres Orco</a>
-      <div class="hidden sm:flex items-center gap-7 text-sm">
+      <a href="index.html" class="font-display text-xl sm:text-2xl font-600 tracking-tight text-ink">Andres Orco</a>
+      <div class="hidden sm:flex items-center gap-7 text-sm font-600 text-accent">
         <a href="index.html" class="navlink">Home</a>
         <a href="music.html" class="navlink active">Music</a>
         <a href="research.html" class="navlink">Research</a>
@@ -38,66 +38,69 @@
     </nav>
   </header>
 
-  <section class="max-w-5xl mx-auto px-6 pt-16 pb-10 sm:pt-20">
-    <h1 class="font-display text-4xl sm:text-5xl font-500 mb-4">Music</h1>
-    <p class="text-ink/65 max-w-2xl">A selection of performances — solo arrangements and small-group playing.</p>
+  <section class="bg-paper">
+    <div class="max-w-5xl mx-auto px-6 pt-16 pb-12 sm:pt-20">
+      <h1 class="font-display text-4xl sm:text-5xl font-500 mb-4">Music</h1>
+      <p class="text-ink/65 max-w-2xl">A selection of performances — solo arrangements and small-group playing.</p>
+    </div>
   </section>
 
-  <section class="max-w-5xl mx-auto px-6 pb-16 sm:pb-20">
+  <section class="border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 py-14 sm:py-16">
 
-    <h2 class="text-xs uppercase tracking-widest text-ink/40 mb-6">Solo arrangements</h2>
-    <div class="grid sm:grid-cols-2 gap-8">
-      <figure>
-        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
-          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/JTt31X1yFWw" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Reflections"></iframe>
-        </div>
-        <figcaption class="mt-3 text-sm text-ink/70">Reflections</figcaption>
-      </figure>
-      <figure>
-        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
-          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/1y7drgRtqe4" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Alone Together"></iframe>
-        </div>
-        <figcaption class="mt-3 text-sm text-ink/70">Alone Together</figcaption>
-      </figure>
-      <figure>
-        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
-          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/6hV-CBxQ-Vc" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Like Someone in Love"></iframe>
-        </div>
-        <figcaption class="mt-3 text-sm text-ink/70">Like Someone in Love</figcaption>
-      </figure>
-      <figure>
-        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
-          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/w2oEUPQVsxw" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The Way You Look Tonight"></iframe>
-        </div>
-        <figcaption class="mt-3 text-sm text-ink/70">The Way You Look Tonight</figcaption>
-      </figure>
-    </div>
+      <h2 class="text-xs uppercase tracking-widest text-accent font-600 mb-6">Solo arrangements</h2>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <figure>
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/JTt31X1yFWw" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Reflections"></iframe>
+          </div>
+          <figcaption class="mt-3 text-sm text-accent font-500">Reflections</figcaption>
+        </figure>
+        <figure>
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/1y7drgRtqe4" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Alone Together"></iframe>
+          </div>
+          <figcaption class="mt-3 text-sm text-accent font-500">Alone Together</figcaption>
+        </figure>
+        <figure>
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/6hV-CBxQ-Vc" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Like Someone in Love"></iframe>
+          </div>
+          <figcaption class="mt-3 text-sm text-accent font-500">Like Someone in Love</figcaption>
+        </figure>
+        <figure>
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/w2oEUPQVsxw" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The Way You Look Tonight"></iframe>
+          </div>
+          <figcaption class="mt-3 text-sm text-accent font-500">The Way You Look Tonight</figcaption>
+        </figure>
+      </div>
 
-    <h2 class="text-xs uppercase tracking-widest text-ink/40 mt-14 mb-6">Small ensemble</h2>
-    <div class="grid sm:grid-cols-2 gap-8">
-      <figure>
-        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
-          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/9FW0zzDLPpg" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="First Song"></iframe>
-        </div>
-        <figcaption class="mt-3 text-sm text-ink/70">First Song</figcaption>
-      </figure>
-      <figure>
-        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
-          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/SKexhua_U0c" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Falling Grace"></iframe>
-        </div>
-        <figcaption class="mt-3 text-sm text-ink/70">Falling Grace</figcaption>
-      </figure>
-      <figure>
-        <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
-          <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/I2o0moNZRK8" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Liebeslied"></iframe>
-        </div>
-        <figcaption class="mt-3 text-sm text-ink/70">Liebeslied</figcaption>
-      </figure>
-    </div>
+      <h2 class="text-xs uppercase tracking-widest text-accent font-600 mt-14 mb-6">Small ensemble</h2>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <figure>
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/9FW0zzDLPpg" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="First Song"></iframe>
+          </div>
+          <figcaption class="mt-3 text-sm text-accent font-500">First Song</figcaption>
+        </figure>
+        <figure>
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/SKexhua_U0c" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Falling Grace"></iframe>
+          </div>
+          <figcaption class="mt-3 text-sm text-accent font-500">Falling Grace</figcaption>
+        </figure>
+        <figure>
+          <div class="aspect-video w-full overflow-hidden rounded-lg bg-ink/5 ring-1 ring-ink/10">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/I2o0moNZRK8" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Liebeslied"></iframe>
+          </div>
+          <figcaption class="mt-3 text-sm text-accent font-500">Liebeslied</figcaption>
+        </figure>
+      </div>
 
-    <div class="mt-12 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-      <a href="https://www.instagram.com/andresorco" class="text-accent hover:underline" target="_blank" rel="noopener">More clips on Instagram &rarr;</a>
-      <a href="https://www.linkedin.com/in/andres-orco-731821279/" class="text-accent hover:underline" target="_blank" rel="noopener">LinkedIn &rarr;</a>
+      <div class="mt-12 text-sm">
+        <a href="https://www.instagram.com/andresorco" class="text-accent font-500 hover:underline" target="_blank" rel="noopener">More clips on Instagram &rarr;</a>
+      </div>
     </div>
   </section>
 

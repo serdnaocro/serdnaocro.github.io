@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andres Orco — Jazz Guitarist & Music Researcher</title>
-  <meta name="description" content="Andres Orco — jazz guitarist and music PhD researcher at Yale, studying the cognition of rhythm, meter, and musical time." />
-  <!-- Open Graph (preview card when the link is shared/emailed) -->
-  <meta property="og:title" content="Andres Orco — Jazz Guitarist & Music Researcher" />
-  <meta property="og:description" content="Jazz guitarist and music PhD researcher at Yale — rhythm, meter, improvisation, and musical time." />
+  <title>Andres Orco — Guitarist & Music Researcher</title>
+  <meta name="description" content="Andres Orco — guitarist and music PhD researcher at Yale, studying the cognition of rhythm, meter, and improvisation." />
+  <meta property="og:title" content="Andres Orco — Guitarist & Music Researcher" />
+  <meta property="og:description" content="Guitarist and music PhD researcher at Yale — rhythm, meter, improvisation, and musical time." />
   <meta property="og:type" content="website" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -18,25 +17,25 @@
     tailwind.config = {
       theme: { extend: {
         fontFamily: { display: ['Fraunces','serif'], sans: ['Inter','system-ui','sans-serif'] },
-        colors: { ink:'#1a1a1a', paper:'#f6f1e6', accent:'#7c2d12' },
+        colors: { ink:'#1a1a1a', paper:'#f6f1e6', surface:'#fcfaf4', band:'#efe6d3', accent:'#7c2d12', clay:'#c96442' },
       } },
     };
   </script>
   <style>
     html { scroll-behavior: smooth; }
     .navlink { position: relative; }
-    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:1px; width:0; background:currentColor; transition:width .25s ease; }
+    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:2px; width:0; background:currentColor; transition:width .25s ease; }
     .navlink:hover::after { width:100%; }
     .navlink.active::after { width:100%; }
   </style>
 </head>
-<body class="bg-paper text-ink font-sans antialiased">
+<body class="bg-surface text-ink font-sans antialiased">
 
   <!-- ===== NAV (shared across pages — keep identical on each) ===== -->
-  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-ink/10">
+  <header class="sticky top-0 z-50 bg-band/95 backdrop-blur border-b border-ink/10">
     <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="font-display text-xl sm:text-2xl font-600 tracking-tight">Andres Orco</a>
-      <div class="hidden sm:flex items-center gap-7 text-sm">
+      <a href="index.html" class="font-display text-xl sm:text-2xl font-600 tracking-tight text-ink">Andres Orco</a>
+      <div class="hidden sm:flex items-center gap-7 text-sm font-600 text-accent">
         <a href="index.html" class="navlink active">Home</a>
         <a href="music.html" class="navlink">Music</a>
         <a href="research.html" class="navlink">Research</a>
@@ -47,15 +46,15 @@
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="max-w-5xl mx-auto px-6 pt-20 pb-14 sm:pt-28 sm:pb-16">
-    <p class="text-sm uppercase tracking-widest text-accent mb-5">Jazz guitarist</p>
-    <!-- TAGLINE: big line + indented smaller line (A's wording, 2026-06-22). -->
-    <h1 class="font-display text-4xl sm:text-6xl font-500 leading-[1.1] tracking-tight max-w-3xl">
-      Improvising musician, guitarist, PhD student at Yale University.
-    </h1>
-    <p class="mt-5 sm:ml-12 max-w-2xl text-lg sm:text-xl text-ink/70 leading-relaxed">
-      Interested in music cognition and computational modeling of improvisation, rhythm, and meter.
-    </p>
+  <section class="bg-paper">
+    <div class="max-w-5xl mx-auto px-6 pt-20 pb-16 sm:pt-28 sm:pb-20">
+      <h1 class="font-display text-4xl sm:text-6xl font-500 leading-[1.1] tracking-tight max-w-3xl">
+        Improvising musician, guitarist, PhD student at Yale University.
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg sm:text-xl text-ink/70 leading-relaxed">
+        Interested in music cognition and computational modeling of improvisation, rhythm, and meter.
+      </p>
+    </div>
   </section>
 
   <!-- ===== BIO (Home is the bio page) ===== -->
@@ -73,8 +72,8 @@
           <p>Before Yale I completed a DMA in Jazz Performance and Pedagogy at the University of Colorado Boulder &mdash; where I also taught jazz theory, composition, and arranging &mdash; after a master's at the New England Conservatory and a bachelor's at Berklee College of Music.</p>
         </div>
         <div class="mt-8 flex flex-wrap gap-4">
-          <a href="music.html" class="px-6 py-3 rounded-full bg-ink text-paper text-sm font-500 hover:bg-accent transition-colors">Hear me play</a>
-          <a href="research.html" class="px-6 py-3 rounded-full border border-ink/25 text-sm font-500 hover:border-ink transition-colors">See the research</a>
+          <a href="music.html" class="px-6 py-3 rounded-full bg-ink text-paper text-sm font-600 hover:bg-ink/90 transition-colors">Hear me play</a>
+          <a href="research.html" class="px-6 py-3 rounded-full bg-clay text-paper text-sm font-600 hover:opacity-90 transition">See the research</a>
         </div>
       </div>
     </div>

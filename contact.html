@@ -14,21 +14,21 @@
   <script>
     tailwind.config = { theme: { extend: {
       fontFamily: { display: ['Fraunces','serif'], sans: ['Inter','system-ui','sans-serif'] },
-      colors: { ink:'#1a1a1a', paper:'#f6f1e6', accent:'#7c2d12' },
+      colors: { ink:'#1a1a1a', paper:'#f6f1e6', surface:'#fcfaf4', band:'#efe6d3', accent:'#7c2d12', clay:'#c96442' },
     } } };
   </script>
   <style>
     .navlink { position: relative; }
-    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:1px; width:0; background:currentColor; transition:width .25s ease; }
+    .navlink::after { content:''; position:absolute; left:0; bottom:-2px; height:2px; width:0; background:currentColor; transition:width .25s ease; }
     .navlink:hover::after, .navlink.active::after { width:100%; }
   </style>
 </head>
-<body class="bg-paper text-ink font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-surface text-ink font-sans antialiased">
 
-  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-ink/10">
+  <header class="sticky top-0 z-50 bg-band/95 backdrop-blur border-b border-ink/10">
     <nav class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="index.html" class="font-display text-xl sm:text-2xl font-600 tracking-tight">Andres Orco</a>
-      <div class="hidden sm:flex items-center gap-7 text-sm">
+      <a href="index.html" class="font-display text-xl sm:text-2xl font-600 tracking-tight text-ink">Andres Orco</a>
+      <div class="hidden sm:flex items-center gap-7 text-sm font-600 text-accent">
         <a href="index.html" class="navlink">Home</a>
         <a href="music.html" class="navlink">Music</a>
         <a href="research.html" class="navlink">Research</a>
@@ -38,17 +38,55 @@
     </nav>
   </header>
 
-  <section class="flex-1 flex items-center">
-    <div class="max-w-5xl mx-auto px-6 py-24 text-center w-full">
-      <h1 class="font-display text-4xl sm:text-5xl font-500 mb-4">Get in touch</h1>
-      <p class="text-ink/65 mb-8 max-w-xl mx-auto">Open to performance, collaboration, and research conversations.</p>
-      <!-- A visible email beats a form (forms fail silently). Default = personal Gmail (permanent). -->
-      <a href="mailto:andres.orco@gmail.com" class="inline-block px-7 py-3 rounded-full bg-ink text-paper text-sm font-500 hover:bg-accent transition-colors">andres.orco@gmail.com</a>
-      <div class="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-        <a href="https://www.instagram.com/andresorco" class="text-accent hover:underline" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.linkedin.com/in/andres-orco-731821279/" class="text-accent hover:underline" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://yalemusic.yale.edu/people/andres-orco-zerpa" class="text-accent hover:underline" target="_blank" rel="noopener">Yale Department of Music</a>
+  <section class="bg-paper">
+    <div class="max-w-5xl mx-auto px-6 pt-16 pb-12 sm:pt-20">
+      <h1 class="font-display text-4xl sm:text-5xl font-500 mb-4">Contact Me</h1>
+      <p class="text-ink/70 max-w-2xl">Open to performance, collaboration, and research conversations — send a note below or reach out directly.</p>
+    </div>
+  </section>
+
+  <section class="border-t border-ink/10">
+    <div class="max-w-5xl mx-auto px-6 py-14 sm:py-16 grid md:grid-cols-2 gap-12">
+
+      <!-- Direct contact -->
+      <div>
+        <h2 class="text-xs uppercase tracking-widest text-accent font-600 mb-6">Reach me directly</h2>
+        <div class="space-y-5">
+          <div>
+            <p class="text-sm font-600 text-ink">Academic</p>
+            <a href="mailto:andres.orco-zerpa@yale.edu" class="text-sm text-accent hover:underline">andres.orco-zerpa@yale.edu</a>
+          </div>
+          <div>
+            <p class="text-sm font-600 text-ink">Everything else</p>
+            <a href="mailto:andres.orco@gmail.com" class="text-sm text-accent hover:underline">andres.orco@gmail.com</a>
+          </div>
+        </div>
+
+        <h2 class="text-xs uppercase tracking-widest text-accent font-600 mt-10 mb-4">Elsewhere</h2>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <a href="https://www.instagram.com/andresorco" class="text-accent hover:underline" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/in/andres-orco-731821279/" class="text-accent hover:underline" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://yalemusic.yale.edu/people/andres-orco-zerpa" class="text-accent hover:underline" target="_blank" rel="noopener">Yale Department of Music</a>
+        </div>
       </div>
+
+      <!-- Message form -->
+      <div>
+        <h2 class="text-xs uppercase tracking-widest text-accent font-600 mb-6">Send a message</h2>
+        <form action="https://formsubmit.co/andres.orco@gmail.com" method="POST" class="space-y-4">
+          <input type="hidden" name="_subject" value="New message from andresorco.com" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="name" required placeholder="Your name"
+            class="w-full px-4 py-3 rounded-lg border border-ink/20 bg-white text-ink text-sm placeholder:text-ink/40 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent" />
+          <input type="email" name="email" required placeholder="Your email"
+            class="w-full px-4 py-3 rounded-lg border border-ink/20 bg-white text-ink text-sm placeholder:text-ink/40 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent" />
+          <textarea name="message" rows="5" required placeholder="Your message"
+            class="w-full px-4 py-3 rounded-lg border border-ink/20 bg-white text-ink text-sm placeholder:text-ink/40 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"></textarea>
+          <button type="submit" class="px-6 py-3 rounded-full bg-clay text-paper text-sm font-600 hover:opacity-90 transition">Send message</button>
+        </form>
+      </div>
+
     </div>
   </section>
 
