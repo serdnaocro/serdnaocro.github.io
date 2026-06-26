@@ -35,7 +35,19 @@
         <a href="cv.pdf" class="navlink">CV</a>
         <a href="contact.html" class="navlink">Contact</a>
       </div>
+      <button id="menuBtn" aria-label="Menu" aria-expanded="false" class="sm:hidden text-paper p-2 -mr-2">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </nav>
+    <div id="mobileMenu" class="hidden sm:hidden border-t border-paper/10">
+      <div class="px-6 py-2 flex flex-col text-sm font-600 text-paper">
+        <a href="index.html" class="py-2.5 border-b border-paper/10">Home</a>
+        <a href="music.html" class="py-2.5 border-b border-paper/10">Music</a>
+        <a href="research.html" class="py-2.5 border-b border-paper/10">Research</a>
+        <a href="cv.pdf" class="py-2.5 border-b border-paper/10">CV</a>
+        <a href="contact.html" class="py-2.5">Contact</a>
+      </div>
+    </div>
   </header>
 
   <section class="bg-paper">
@@ -110,6 +122,6 @@
       <a href="contact.html" class="hover:text-paper transition-colors">Get in touch →</a>
     </div>
   </footer>
-  <script>document.querySelectorAll('.year').forEach(e=>e.textContent=new Date().getFullYear());</script>
+  <script>document.querySelectorAll('.year').forEach(e=>e.textContent=new Date().getFullYear());var _mb=document.getElementById('menuBtn'),_mm=document.getElementById('mobileMenu');if(_mb)_mb.addEventListener('click',function(){var h=_mm.classList.toggle('hidden');_mb.setAttribute('aria-expanded',String(!h));});</script>
 </body>
 </html>
